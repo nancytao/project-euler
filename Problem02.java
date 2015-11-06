@@ -7,15 +7,16 @@
 public class Problem02 {
     public static void main(String[] args) {
         int sum = 0;
-        for (int i = 0; ; i++) {
-            int fib = fibonacci(i);
 
-            if (fib > 4000000) {
+        for (int i = 0; ; i++) {
+            int fibNum = fibonacci(i);
+
+            if (fibNum > 4000000) {
                 break;
             }
 
-            if (fib % 2 == 0) {
-                sum += fib;
+            if (fibNum % 2 == 0) {
+                sum += fibNum;
             }
         }
 
