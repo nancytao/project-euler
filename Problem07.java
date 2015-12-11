@@ -1,5 +1,6 @@
 /**
  * What is the 10 001st prime number?
+ *
  * @author Nancy Tao
  * @version 11/09/2015
  */
@@ -20,7 +21,7 @@ public class Problem07 {
         }
     }
 
-    public boolean isPrime(int num) {
+    private boolean isPrime(int num) {
         for (int i = 2; i < num; i++) {
             if (num % i == 0) {
                 return false;

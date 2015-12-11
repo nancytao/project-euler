@@ -1,5 +1,6 @@
 /**
  * Find the sum of all the multiples of 3 and 5 below 1000
+ *
  * @author Nancy Tao
  * @version 11/06/2015
  */

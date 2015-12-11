@@ -1,5 +1,6 @@
 /**
  * Find the largest palindrome made from the product of two 3-digit numbers.
+ *
  * @author Nancy Tao
  * @version 11/07/2015
  */

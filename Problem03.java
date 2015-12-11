@@ -1,5 +1,6 @@
 /**
  * Find the largest prime factor of the number 600851475143
+ *
  * @author Nancy Tao
  * @version 11/07/2015
  */
@@ -19,7 +20,7 @@ public class Problem03 {
         }
     }
 
-    public long smallestFactor(long num) {
+    private long smallestFactor(long num) {
         for (long i = 2; i < num; i++) {
             if (num % i == 0) {
                 return i;
