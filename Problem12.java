@@ -29,7 +29,7 @@ public class Problem12 {
         int sqrt = (int) (Math.sqrt(num));
         for (int i = 1; i < sqrt; i++) {
             if (num % i == 0) {
-                divisorCount++;
+                divisorCount += 2;
             }
         }
 
