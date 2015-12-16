@@ -24,6 +24,12 @@ public class Problem26 {
         System.out.println(bestNum);
     }
 
+    /**
+     * Counts how many times you can divide a factor of 10 by the number before the remainder starts
+     * repeating
+     * @param  denominator number to divide by
+     * @return             the length of the recurring cycle
+     */
     public static int cycleLength(int denominator) {
         int length = 0;
         int numerator = 1;
