@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Find the value of d (less than 1000) for which 1/d contains the longest recurring cycle in its
@@ -31,13 +31,12 @@ public class Problem26 {
      * @return             the length of the recurring cycle
      */
     public static int cycleLength(int denominator) {
-        int length = 0;
         int numerator = 1;
         while (numerator < denominator) {
             numerator *= 10;
         }
 
-        List<Integer> listOfRemainders = new ArrayList<>();
+        Set<Integer> listOfRemainders = new HashSet<>();
         listOfRemainders.add(numerator);
 
         int remainder = 0;
@@ -50,10 +49,9 @@ public class Problem26 {
                     remainder *= 10;
                 }
 
-                if (listOfRemainders.contains(remainder)) {
+                if (!listOfRemainders.add(remainder)) {
                     return listOfRemainders.size();
                 } else {
-                    listOfRemainders.add(remainder);
                     numerator = remainder;
                 }
             } else {
