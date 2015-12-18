@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.List;
 
 /**
  * The number 3797 has an interesting property. Being prime itself, it is possible to continuously
