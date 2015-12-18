@@ -9,8 +9,7 @@ import java.util.List;
  */
 public class Problem10 {
     public static void main(String[] args) {
-        Problem10 p10 = new Problem10();
-        PrimeGenerator pg = p10.new PrimeGenerator(2000000);
+        PrimeGenerator pg = new Problem10.PrimeGenerator(2000000);
         List<Integer> primes = pg.getListOfPrimes();
 
         long sum = 0;
@@ -24,7 +23,7 @@ public class Problem10 {
     /**
      * Generates prime numbers up to a given limit, exclusive
      */
-    private class PrimeGenerator {
+    private static class PrimeGenerator {
         private int upperLimit;
         private List<Integer> listOfPrimes;
 
