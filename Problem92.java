@@ -24,20 +24,18 @@ public class Problem92 {
     }
 
     private static boolean endsIn89(int num) {
-        while (true) {
-            if (num == 1) {
-                return false;
-            } else if (num == 89) {
-                return true;
-            } else {
-                int sum = 0;
-                while (num != 0) {
-                    sum += (num % 10) * (num % 10);
-                    num = num / 10;
-                }
-
-                num = sum;
+        if (num == 1) {
+            return false;
+        } else if (num == 89) {
+            return true;
+        } else {
+            int sum = 0;
+            while (num != 0) {
+                sum += (num % 10) * (num % 10);
+                num = num / 10;
             }
+
+            return endsIn89(sum);
         }
     }
 }
