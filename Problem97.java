@@ -14,9 +14,7 @@ public class Problem97 {
 
     public static void main(String[] args) {
         BigInteger bi = BigInteger.valueOf(2);
-        bi = bi.pow(7830457);
-        bi = bi.multiply(BigInteger.valueOf(28433));
-        bi = bi.add(BigInteger.valueOf(1));
+        bi = bi.pow(7830457).multiply(BigInteger.valueOf(28433)).add(BigInteger.valueOf(1));
 
         String asString = bi.toString();
         System.out.println(asString.substring(asString.length() - 10));
